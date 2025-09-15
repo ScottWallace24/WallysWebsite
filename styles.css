@@ -1,0 +1,83 @@
+/* Set margin, padding and background colour*/
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+/* Display list items horizontally and add space between text of pages */ 
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+/*Change font to bold and make the text extra large*/
+nav ul li a {
+    font: bold;
+    font-size: x-large
+}
+
+/* Underline text when hovered over */
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+/* Showcase video behind title and pages*/
+.showcase {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+/* Adjusting values accordingly to get desired position of video */
+.showcase video {
+    width: 150%; 
+    height: 150%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Adjusting position of text as well as the font colour */
+.text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: #F5F5DC;
+    text-align: center;
+    width: 100%;
+}
+
+/* Adjusting font size */
+.text h1 {
+    font-size: 3em;
+}
+
+/* Adjusting text on home page to take away underline when not hovering over*/
+.text ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Adjusting the size of the GIF on Daisy and Ellie's respective web pages */
+.image img {
+    max-width: 100%; 
+    height: auto; 
+    width: 80%; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+/* Adjusting the size of the pictures on the Gallery page */
+.gallery img {
+    height: 200px; 
+    max-width: 300px;
+    margin: 10px;
+  }
